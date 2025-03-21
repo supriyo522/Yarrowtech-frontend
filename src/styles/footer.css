@@ -1,10 +1,12 @@
 .footer {
-    background:#0b0d1f;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  background: #0b0d1f;
+  color: white;
+  text-align: center;
+  padding: 5px 0;  /* Reduced padding */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;  /* Decrease text size */
+  height: 30px;  /* Set a smaller height */
+  line-height: 30px; /* Align text vertically */
+}

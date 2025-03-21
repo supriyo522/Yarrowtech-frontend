@@ -1,6 +1,97 @@
 .contact-container {
-    padding: 20px;
-    background-color: #dff0d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  background-color: #dff0d8;
+  flex-wrap: wrap; /* Ensures proper layout in smaller screens */
+}
+
+.contact-image {
+  flex: 1;
+  text-align: center;
+  max-width: 500px;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Fix */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
     text-align: center;
   }
-  
+
+  .contact-image {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
