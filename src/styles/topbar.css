@@ -1,0 +1,30 @@
+/* Top Bar */
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+  }
+  
+  .auth-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .auth-button:hover {
+    background-color: #e55b00;
+  }
+  
