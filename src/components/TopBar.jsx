@@ -1,19 +1,15 @@
-import React, { useState } from "react";
-import "../styles/topbar.css"; // Create this CSS file for styling
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "../styles/topbar.css";
 
 const TopBar = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  const handleAuth = () => {
-    setIsAuthenticated(!isAuthenticated);
-  };
+  const navigate = useNavigate();
 
   return (
     <div className="top-bar">
       <div className="top-bar-content">
-        {/* <span>Welcome to Yarrowtech</span> */}
-        <button onClick={handleAuth} className="auth-button">
-          {isAuthenticated ? "Sign Out" : "Sign In"}
+        <button onClick={() => navigate("/signin")} className="auth-button">
+          Sign In
         </button>
       </div>
     </div>
@@ -21,3 +17,4 @@ const TopBar = () => {
 };
 
 export default TopBar;
+
